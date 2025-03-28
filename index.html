@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu Galerisi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hava Durumu Tahmin Sistemi</h1>
+    </header>
+    
+    <main>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Şehir adı girin...">
+            <button id="search-btn">Ara</button>
+        </div>
+        
+        <div class="weather-card hidden">
+            <div class="weather-info">
+                <h2 id="city-name">İstanbul</h2>
+                <div class="temp-container">
+                    <span id="temperature">25</span>
+                    <span class="celsius">°C</span>
+                </div>
+                <div id="weather-icon"></div>
+                <p id="weather-desc">Güneşli</p>
+            </div>
+            <div class="details">
+                <div class="detail-item">
+                    <span>Nem:</span>
+                    <span id="humidity">45%</span>
+                </div>
+                <div class="detail-item">
+                    <span>Rüzgar Hızı:</span>
+                    <span id="wind-speed">12 km/s</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="error hidden" id="error-message">
+            İstenilen şehir bulunamadı!
+        </div>
+    </main>
+
+    <footer>
+        <p>Fatemeh0RZ tarafından ❤️ ile yapıldı</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
